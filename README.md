@@ -16,5 +16,8 @@ This is generating the secret (`DATABASE_URL`) - to be able to use the original 
 After first start create a new user and connect your PowerDNS Auth Server API.  
 DONE!
 
+##
+Testing - Alpha Software - No waranty.  
+  
 ## Todo
 Things could be more automated. Eg. get Main Region from Consul and auto-generate the ENV.
