@@ -1,4 +1,5 @@
 # flyio-powerdns-admin
+Credits and thanks to: https://github.com/PowerDNS-Admin/PowerDNS-Admin
 
 ## Location
 Use your PowerDNS Main Region.  
@@ -16,7 +17,7 @@ This is generating the secret (`DATABASE_URL`) - to be able to use the original 
 After first start create a new user and connect your PowerDNS Auth Server API.  
 DONE!
 
-##
+## Attention
 Testing - Alpha Software - No waranty.  
   
 ## Todo
