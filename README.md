@@ -12,13 +12,16 @@ The same Postgres-Cluster as the PowerDNS Auth Server can be used.
 `flyctl postgres connect -a APP`  
 This is generating the secret (`DATABASE_URL`) - to be able to use the original image of powerdns-admin just pass the value:  
 `flyctl secret set SQLALCHEMY_DATABASE_URI=REPLACE`  
+Finally (https://flask.palletsprojects.com/en/1.1.x/config/#SECRET_KEY):  
+`flyctl secret set SECRET_KEY=a-very-secret-key`  
 
 ## Init
 After first start create a new user and connect your PowerDNS Auth Server API.  
+You should connect your Private IPv6 address (PDNS not exposed directly!).
 DONE!
 
 ## Attention
 Testing - Alpha Software - No waranty.  
   
 ## Todo
-Things could be more automated. Eg. get Main Region from Consul and auto-generate the ENV.
+*Things could be more automated. Eg. get Main Region from Consul and auto-generate the ENV.*
