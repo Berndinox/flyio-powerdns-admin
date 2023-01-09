@@ -15,6 +15,10 @@ This is generating the secret (`DATABASE_URL`) - to be able to use the original 
 Finally (https://flask.palletsprojects.com/en/1.1.x/config/#SECRET_KEY):  
 `flyctl secret set SECRET_KEY=a-very-secret-key`  
 
+Also:
+PDNS_AUTH_IP="PDNS-AUTH-IP"
+PDNS_AUTH_APIKEY="SECRET-PDNS-API-KEY"
+
 ## Init
 After first start create a new user and connect your PowerDNS Auth Server API.  
 You should connect your Private IPv6 address (PDNS not exposed directly!).
