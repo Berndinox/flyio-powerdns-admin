@@ -12,12 +12,9 @@ GUNICORN_ARGS="-t ${GUNICORN_TIMEOUT} --workers ${GUNICORN_WORKERS} --bind ${BIN
 
 cat /app/powerdnsadmin/engine_config.py >> /app/powerdnsadmin/docker_config.py
 
-
 if [ "$1" == gunicorn ]; then
     /bin/sh -c "flask db upgrade"
-    supercronic -quiet /app/crontab &
     exec "$@" $GUNICORN_ARGS
 else
-    supercronic -quiet /app/crontab &
     exec "$@"
 fi
